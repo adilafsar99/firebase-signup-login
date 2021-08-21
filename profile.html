@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Profile Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="profile-page">
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <div class="loader" style="display:block" id="loader"></div>
+      </div>
+    </div>
+    <div class="heading-div">
+      <h1 id="profile-page-heading">Profile Page</h1>
+    </div>
+    <div class="user-info-div">
+      <div class="attr-div" id="profile-pic-div">
+        <img id="profile-pic" src="default-pic.webp" alt="Profile picture" />
+      </div>
+      <div class="attr-div" id="name-div">
+        <div>
+          <h2>Name</h2>
+        </div>
+        <div class="p-div">
+          <p id="name"></p>
+        </div>
+      </div>
+      <div class="attr-div" id="username-div">
+        <div>
+          <h2>Username</h2>
+        </div>
+        <div class="p-div">
+          <p id="username"></p>
+        </div>
+      </div>
+      <div class="attr-div" id="email-div">
+        <div>
+          <h2>Email</h2>
+        </div>
+        <div class="p-div">
+          <p id="email"></p>
+        </div>
+      </div>
+    </div>
+    <div id="response-div">
+      <div class="alert-div" id="logout-alert" style="display:none">
+        <p>
+          Log out successful!
+        </p>
+      </div>
+      <div class="loader" style="display:none" id="loader"></div>
+    </div>
+    <div id="buttons-div">
+      <button id="logout-btn">Log out</button>
+    </div>
+  </div>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+          https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyAIdo-8ubj-2hDCyutANkRtB1ZMCb252jI",
+      authDomain: "fir-projects-df679.firebaseapp.com",
+      projectId: "fir-projects-df679",
+      storageBucket: "fir-projects-df679.appspot.com",
+      messagingSenderId: "41637280899",
+      appId: "1:41637280899:web:c4df451f10b96eba5fefb6",
+      measurementId: "G-CGTE0Y60JE"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>

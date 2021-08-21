@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>Log In Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="login-page">
+    <div class="heading-div">
+      <h1>Log In Page</h1>
+    </div>
+    <div class="inputs-div">
+      <div id="email-input-div">
+        <label for="email-field">Email:</label>
+        <input type="email" name="email" id="email-field" placeholder="Enter email" />
+        <div id="email-message" class="hidden">
+          <p class="login-page-message">
+            Invalid email!
+          </p>
+        </div>
+      </div>
+      <div id="password-input-div">
+        <label for="pass-field">Password:</label>
+        <input type="password" name="password" id="pass-field" placeholder="Enter password" /><div id="pass-message" class="hidden">
+          <p class="login-page-message">
+            Invalid password!
+          </p>
+        </div>
+      </div>
+      <div id="login-div">
+        <input type="submit" id="login-btn" value="Log in" />
+      </div>
+    </div>
+    <div id="response-div">
+      <div class="alert-div" id="success-alert" style="display:none">
+        <p>
+          Log in successful!
+        </p>
+      </div>
+      <div class="loader" style="display:none" id="loader"></div>
+    </div>
+    <div id="sign-up-link-div">
+      <a id="sign-up-link" href="index.html">Haven't signed up yet? Click here.</a>
+    </div>
+  </div>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+           https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+
+  <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+      apiKey: "AIzaSyAIdo-8ubj-2hDCyutANkRtB1ZMCb252jI",
+      authDomain: "fir-projects-df679.firebaseapp.com",
+      projectId: "fir-projects-df679",
+      storageBucket: "fir-projects-df679.appspot.com",
+      messagingSenderId: "41637280899",
+      appId: "1:41637280899:web:c4df451f10b96eba5fefb6",
+      measurementId: "G-CGTE0Y60JE"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="app.js"></script>
+</body>
+</html>
